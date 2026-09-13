@@ -9,7 +9,7 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
 endif()
 
 include("$ENV{VITASDK}/share/vita.cmake" REQUIRED)
-project(caffeine VERSION 0.2.2 LANGUAGES C)
+project(caffeine VERSION 1.0.0 LANGUAGES C)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)

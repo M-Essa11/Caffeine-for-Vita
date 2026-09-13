@@ -3,8 +3,8 @@ Caffeine:
   process_image: false
   imagemodule: false
   version:
-    major: 0
-    minor: 4
+    major: 1
+    minor: 0
   main:
     start: module_start
     stop: module_stop

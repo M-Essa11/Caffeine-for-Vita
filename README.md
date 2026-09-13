@@ -7,6 +7,8 @@ standby remains available.
 The toggle starts disabled after every reboot. Its state and blue cup indicator
 remain synchronized when the Quick Menu is closed and reopened.
 
+The current stable release is **v1.0.0**.
+
 ![Caffeine cup icon](assets/caffeine.png)
 
 ## Requirements
