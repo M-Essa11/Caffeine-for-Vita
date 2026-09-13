@@ -1,0 +1,10 @@
+Caffeine:
+  attributes: 0
+  process_image: false
+  imagemodule: false
+  version:
+    major: 0
+    minor: 4
+  main:
+    start: module_start
+    stop: module_stop

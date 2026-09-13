@@ -1,0 +1,9 @@
+/build/
+/out/
+/dist/
+/reference/
+INSTALL.txt
+*.vpk
+*.suprx
+*.velf
+*.elf
