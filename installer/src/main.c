@@ -388,7 +388,7 @@ int main(void)
     psvDebugScreenInit();
     psvDebugScreenSetFgColor(0x00FFFFFF);
 
-    printf("\n  Caffeine for Vita Installer v1.0.0\n");
+    printf("\n  Caffeine for Vita Installer v1.0.1\n");
     printf("  ==================================\n\n");
     printf("  This installs QuickMenuReborn and Caffeine to ur0:.\n");
     printf("  ur0:tai/config.txt will be backed up before editing.\n");

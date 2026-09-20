@@ -17,7 +17,7 @@ endif()
 
 set(VITA_APP_NAME "Caffeine Installer")
 set(VITA_TITLEID "CFNE00001")
-set(VITA_VERSION "01.00")
+set(VITA_VERSION "01.01")
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Os")
 

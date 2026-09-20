@@ -12,6 +12,7 @@
 #define TEXTURE_ID "caffeine_vita_cup_texture"
 #define TEXTURE_PATH_UR0 "ur0:/QuickMenuReborn/caffeine.png"
 #define TEXTURE_PATH_UX0 "ux0:/QuickMenuReborn/caffeine.png"
+#define CHECKBOX_UNCHECKED 0
 
 static volatile int caffeine_enabled = 0;
 static volatile int worker_running = 1;
@@ -114,7 +115,8 @@ int module_start(SceSize argc, const void *args)
     QuickMenuRebornSetWidgetSize(CHECKBOX_ID, 48.0f, 48.0f, 0.0f, 0.0f);
     QuickMenuRebornSetWidgetPosition(CHECKBOX_ID, 350.0f, 0.0f, 0.0f, 0.0f);
     QuickMenuRebornSetWidgetColor(CHECKBOX_ID, 1.0f, 1.0f, 1.0f, 1.0f);
-    QuickMenuRebornSaveCheckBoxState(CHECKBOX_ID, CHECKBOX_OFF);
+    /* The saved state is a boolean: zero means unchecked. */
+    QuickMenuRebornSaveCheckBoxState(CHECKBOX_ID, CHECKBOX_UNCHECKED);
     QuickMenuRebornAssignDefaultCheckBoxRecall(CHECKBOX_ID);
     QuickMenuRebornAssignDefaultCheckBoxSave(CHECKBOX_ID);
     QuickMenuRebornAssignOnLoadHandler(
