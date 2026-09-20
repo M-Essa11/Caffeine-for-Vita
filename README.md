@@ -19,7 +19,7 @@ The current stable release is **v1.0.1**.
 
 The VPK installer includes QuickMenuReborn 2.5 and installs it automatically.
 
-## Installation
+## VPK installation
 
 1. Install `CaffeineForVita.vpk` with VitaShell.
 2. Open **Caffeine Installer**.
@@ -34,12 +34,28 @@ Caffeine from restoring normal sleep behavior.
 After rebooting, the VPK file and installer bubble may be deleted. The Quick
 Menu plugin remains installed.
 
+## Standalone plugin installation
+
+Use this method if QuickMenuReborn 2.5 is already installed:
+
+1. Download `caffeine.suprx` and `caffeine.png` from the release assets.
+2. Copy both files to `ur0:QuickMenuReborn/` with VitaShell.
+3. Disable any active NoSleep plugin entry in `ur0:tai/config.txt` so normal
+   sleep behavior can return when Caffeine is off.
+4. Reboot the Vita.
+
+QuickMenuReborn must already be loaded under `*main`. The standalone files do
+not install or configure QuickMenuReborn automatically.
+
 ## Uninstallation
 
 Open **Caffeine Installer** and press **Square**. The installer removes Caffeine
 and the bundled QuickMenuReborn files, removes its loader entry, and restores a
 NoSleep line previously disabled by the installer. Reboot, then delete the
 installer bubble.
+
+For a standalone installation, delete `ur0:QuickMenuReborn/caffeine.suprx` and
+`ur0:QuickMenuReborn/caffeine.png`, then reboot.
 
 ## Building
 
